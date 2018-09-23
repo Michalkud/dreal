@@ -1,0 +1,6 @@
+type Task {
+  title: String!
+  estimation: String
+  prerequisities: [Task!]!
+  tags: [String!]
+}
