@@ -1,0 +1,165 @@
+html {
+  font-size: 62.5% !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+}
+
+iframe {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+blockquote,
+figure,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 65%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+
+  &:hover,
+  &:focus {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+}
+
+a,
+button {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+
+  /* Remove excess padding and border in Firefox 4+ */
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}

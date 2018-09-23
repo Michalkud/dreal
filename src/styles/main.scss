@@ -1,0 +1,135 @@
+@import "~bootstrap/scss/bootstrap-reboot.scss";
+@import "./reset.scss";
+@import "./variables.scss";
+
+.formSection {
+  min-height: 100vh;
+  background: #adddcf;
+  position: relative;
+}
+
+.swipeSection {
+  min-height: 100vh;
+  background: #adddcf;
+  position: relative;
+}
+
+.mainForm {
+  background: white;
+  width: 45%;
+  display: block;
+  position: absolute;
+  padding: 5%;
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
+  top: 50%;
+  transition: 300ms ease;
+  box-shadow: 0px 11px 15px -8px rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
+
+  &:hover {
+    transform: translate3d(-50%, -51%, 0);
+  }
+
+  &__holder {
+    padding-bottom: 2.5rem;
+
+    label {
+      width: 100%;
+      font-size: 1.5rem;
+      padding-bottom: 0.6rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      height: 7rem;
+      font-size: 2.1rem;
+      padding-left: 2rem;
+      padding-right: 6.7rem;
+      border-radius: 5px;
+      border: none;
+      background: #f8f8f8;
+      border: 2px solid;
+      border-color: transparent;
+      transition: 300ms ease;
+
+      &:focus {
+        border-color: #88cf8f;
+      }
+    }
+
+    button {
+      background: #88cf88;
+      text-align: center;
+      border-radius: 5px;
+      padding: 2.4rem;
+      color: white;
+      font-size: 1.7rem;
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: block;
+      margin-top: 4.6rem;
+    }
+  }
+}
+
+.swipe {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+
+  .swipeBlock {
+    width: 35%;
+    background: white;
+    border-radius: 5px;
+    height: 60%;
+    padding: 50px;
+    transition: 300ms ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translate3d(0, -10px, 0);
+      box-shadow: 0px 11px 15px -8px rgba(0, 0, 0, 0.26);
+    }
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+  }
+
+  .swipeDivider {
+    transform: translate3d(-50%, -50%, 0);
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+    &:after {
+      width: 1px;
+      height: 90vh;
+      position: absolute;
+      content: "";
+      transform: translate3d(-50%, -50%, 0);
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      background: white;
+    }
+  }
+}
