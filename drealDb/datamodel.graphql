@@ -3,4 +3,5 @@ type Task {
   estimation: String
   prerequisities: [Task!]!
   tags: [String!]
+  importance: Int
 }
