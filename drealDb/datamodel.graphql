@@ -1,7 +1,14 @@
 type Task {
-  title: String!
-  estimation: String
-  prerequisities: [Task!]!
-  tags: [String!]
+  id: ID! @unique
+  description: String!
+  estimation: Int
   importance: Int
+}
+
+type TimeLog {
+  id: ID! @unique
+  task: Task!
+  startDate: String!
+  endDate: String!
+  
 }
