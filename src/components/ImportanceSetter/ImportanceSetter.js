@@ -74,13 +74,10 @@ class ImportanceSetter extends Component {
     const sortedTasks = tasks.sort((a, b) => a.importance - b.importance);
     for(let i = 1; i < sortedTasks.length; i++) {
       if (sortedTasks.length >= 2 && sortedTasks[i - 1].importance === sortedTasks[i].importance) {
-        console.log('here');
         [optionOne, optionTwo] = [sortedTasks[i - 1], sortedTasks[i]];
-        console.log(optionOne);
         break;
       }
     }
-    console.log(optionOne);
     return [optionOne, optionTwo];
   }
 }
